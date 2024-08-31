@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Filter</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="filter-container">
+        <h1>Transaction Filter</h1>
+        <div class="filters">
+            <label for="date-filter">Date Range:</label>
+            <input type="date" id="start-date"> to <input type="date" id="end-date">
+
+            <label for="credit-filter">Credit Amount:</label>
+            <input type="number" id="min-credit" placeholder="Min"> to <input type="number" id="max-credit" placeholder="Max">
+
+            <label for="debit-filter">Debit Amount:</label>
+            <input type="number" id="min-debit" placeholder="Min"> to <input type="number" id="max-debit" placeholder="Max">
+
+            <label for="description-filter">Description Contains:</label>
+            <input type="text" id="description-filter" placeholder="Search...">
+
+            <button onclick="filterTransactions()">Filter</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
